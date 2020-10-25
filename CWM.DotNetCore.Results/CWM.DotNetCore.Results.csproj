@@ -2,10 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mukesh Murugan</Authors>
+    <RepositoryUrl>https://github.com/iammukeshm/CWM.DotNetCore</RepositoryUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/iammukeshm/CWM.DotNetCore</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>2020</Copyright>
+    <Description>Uniform Responses for your ASP.NET Core Applications.</Description>
+    <PackageTags>Result, Response</PackageTags>
+    <PackageTags></PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CWM.DotNetCore.ValidatR\CWM.DotNetCore.ValidatR.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

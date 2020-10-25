@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mukesh Murugan</Authors>
+    <RepositoryUrl>https://github.com/iammukeshm/CWM.DotNetCore</RepositoryUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/iammukeshm/CWM.DotNetCore</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>2020</Copyright>
+    <Description>IHostBuilder Extensions for popular Logging Frameworks.</Description>
+    <PackageTags>Log, Logging, Logger</PackageTags>
+    <PackageTags></PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +26,13 @@
     <PackageReference Include="Serilog.Sinks.Async" Version="1.4.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
     <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

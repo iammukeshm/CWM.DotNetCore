@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.Extensions", "CWM.DotNetCore.Extensions\CWM.DotNetCore.Extensions.csproj", "{405B1F2D-4B94-437B-9B3B-F73AB5F608A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWM.DotNetCore.Extensions", "CWM.DotNetCore.Extensions\CWM.DotNetCore.Extensions.csproj", "{405B1F2D-4B94-437B-9B3B-F73AB5F608A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.ValidatR", "CWM.DotNetCore.ValidatR\CWM.DotNetCore.ValidatR.csproj", "{97D0A308-0555-4945-AC9A-21062FB016F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWM.DotNetCore.ValidatR", "CWM.DotNetCore.ValidatR\CWM.DotNetCore.ValidatR.csproj", "{97D0A308-0555-4945-AC9A-21062FB016F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.Results", "CWM.DotNetCore.Results\CWM.DotNetCore.Results.csproj", "{8884AFAF-1261-43DD-B3B2-D1CA05018726}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWM.DotNetCore.Results", "CWM.DotNetCore.Results\CWM.DotNetCore.Results.csproj", "{8884AFAF-1261-43DD-B3B2-D1CA05018726}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.Logging", "CWM.DotNetCore.Logging\CWM.DotNetCore.Logging.csproj", "{A83BE2B3-86BF-429B-8D39-1C8948CC68FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWM.DotNetCore.Logging", "CWM.DotNetCore.Logging\CWM.DotNetCore.Logging.csproj", "{A83BE2B3-86BF-429B-8D39-1C8948CC68FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.DependencyInjection", "CWM.DotNetCore.DependencyInjection\CWM.DotNetCore.DependencyInjection.csproj", "{40DF803E-C22F-4313-BE94-33B26C019C9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWM.DotNetCore.DependencyInjection", "CWM.DotNetCore.DependencyInjection\CWM.DotNetCore.DependencyInjection.csproj", "{40DF803E-C22F-4313-BE94-33B26C019C9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.Caching", "CWM.DotNetCore.Caching\CWM.DotNetCore.Caching.csproj", "{63871D47-6FB8-467C-BE5E-49E4A818908F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.Domain", "CWM.DotNetCore.Domain\CWM.DotNetCore.Domain.csproj", "{C421E941-A77A-438C-84A8-24D607915AD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{40DF803E-C22F-4313-BE94-33B26C019C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40DF803E-C22F-4313-BE94-33B26C019C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40DF803E-C22F-4313-BE94-33B26C019C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63871D47-6FB8-467C-BE5E-49E4A818908F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63871D47-6FB8-467C-BE5E-49E4A818908F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63871D47-6FB8-467C-BE5E-49E4A818908F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63871D47-6FB8-467C-BE5E-49E4A818908F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C421E941-A77A-438C-84A8-24D607915AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C421E941-A77A-438C-84A8-24D607915AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C421E941-A77A-438C-84A8-24D607915AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C421E941-A77A-438C-84A8-24D607915AD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

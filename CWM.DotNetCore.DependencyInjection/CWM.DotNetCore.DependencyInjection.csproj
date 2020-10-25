@@ -2,12 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mukesh Murugan</Authors>
+    <RepositoryUrl>https://github.com/iammukeshm/CWM.DotNetCore</RepositoryUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/iammukeshm/CWM.DotNetCore</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>2020</Copyright>
+    <Description>IOC Extensions for .NET Core / IServiceCollection </Description>
+    <PackageTags>IOC, DependencyInjection, Extensions, C#, DotNetCore</PackageTags>
+    <PackageTags></PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.9" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.9" />
     <PackageReference Include="Scrutor" Version="3.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

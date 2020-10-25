@@ -1,5 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -9,22 +8,24 @@
     <PackageProjectUrl>https://github.com/iammukeshm/CWM.DotNetCore</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>2020</Copyright>
-    <Description>Essential Extensions for .NET Core / C#</Description>
-    <PackageTags>Extensions, C#, DotNetCore</PackageTags>
+    <Description>IDistributedCache Extensions to reduce Database Calls and Improve Application Effeciency! </Description>
+    <PackageTags>Caching, Extensions, C#, DotNetCore</PackageTags>
     <PackageTags></PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CWM.DotNetCore.Results\CWM.DotNetCore.Results.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CWM.DotNetCore.ValidatR\CWM.DotNetCore.ValidatR.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
-  </ItemGroup>
+
   <ItemGroup>
     <None Include="..\..\..\..\Downloads\logo.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
+
 </Project>
