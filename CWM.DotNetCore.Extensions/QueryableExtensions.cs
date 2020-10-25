@@ -1,11 +1,16 @@
-﻿using CWM.DotNetCore.ValidatR;
+﻿using CWM.DotNetCore.Results;
+using CWM.DotNetCore.ValidatR;
+using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CWM.DotNetCore.Extensions
 {
     public static class QueryableExtensions
     {
-        public static async Task<PaginatedList<T>> ToPaginatedListAsync<T>(this IQueryable<T> source, int pageNumber, int pageSize) where T : class
+        public static async Task<PaginatedResult<T>> ToPaginatedListAsync<T>(this IQueryable<T> source, int pageNumber, int pageSize) where T : class
         {
             Throw.Exception.IfNull(source, nameof(source));
             pageNumber = pageNumber == 0 ? 1 : pageNumber;
@@ -13,7 +18,7 @@ namespace CWM.DotNetCore.Extensions
             long count = await source.LongCountAsync();
             pageNumber = pageNumber <= 0 ? 1 : pageNumber;
             List<T> items = await source.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
-            return PaginatedList<T>.Success(items, count, pageNumber, pageSize);
+            return PaginatedResult<T>.Success(items, count, pageNumber, pageSize);
         }
     }
 }

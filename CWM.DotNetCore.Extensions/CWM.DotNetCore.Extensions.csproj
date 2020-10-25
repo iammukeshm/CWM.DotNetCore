@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CWM.DotNetCore.Results\CWM.DotNetCore.Results.csproj" />
     <ProjectReference Include="..\CWM.DotNetCore.ValidatR\CWM.DotNetCore.ValidatR.csproj" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+  </ItemGroup>
 </Project>

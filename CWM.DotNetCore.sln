@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.Results", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.Logging", "CWM.DotNetCore.Logging\CWM.DotNetCore.Logging.csproj", "{A83BE2B3-86BF-429B-8D39-1C8948CC68FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.DependencyInjection", "CWM.DotNetCore.DependencyInjection\CWM.DotNetCore.DependencyInjection.csproj", "{40DF803E-C22F-4313-BE94-33B26C019C9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A83BE2B3-86BF-429B-8D39-1C8948CC68FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A83BE2B3-86BF-429B-8D39-1C8948CC68FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A83BE2B3-86BF-429B-8D39-1C8948CC68FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40DF803E-C22F-4313-BE94-33B26C019C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DF803E-C22F-4313-BE94-33B26C019C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DF803E-C22F-4313-BE94-33B26C019C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40DF803E-C22F-4313-BE94-33B26C019C9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
