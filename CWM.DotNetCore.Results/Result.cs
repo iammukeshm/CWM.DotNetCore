@@ -8,19 +8,19 @@ namespace CWM.DotNetCore.Results
     public class Result
     {
         public Result(){}
-        public string[] Messages { get; set; } = new string[0];
+        public List<string> Messages { get; set; } = new List<string>();
         public bool Succeeded { get; }
-        internal Result(bool succeeded, IEnumerable<string> messages = null)
+        internal Result(bool succeeded, List<string> messages = null)
         {
             Succeeded = succeeded;
-            Messages = (messages ?? Enumerable.Empty<string>()).ToArray();
+            Messages = messages;
         }
         internal Result(bool succeeded, string message)
         {
             Succeeded = succeeded;
-            Messages[0] = message;
+            Messages.Add(message);
         }
-        public static Result Failure(IEnumerable<string> messages)
+        public static Result Failure(List<string> messages)
         {
             Throw.Exception.IfNull(messages, nameof(messages));
             return new Result(false, messages);
@@ -39,8 +39,8 @@ namespace CWM.DotNetCore.Results
             Data = data;
         }
         public T Data { get; }
-        internal Result(bool succeeded, T data = default, IEnumerable<string> messages = null) : base(succeeded, messages) => Data = data;
-        public static new Result<T> Failure(IEnumerable<string> messages)
+        internal Result(bool succeeded, T data = default, List<string> messages = null) : base(succeeded, messages) => Data = data;
+        public static new Result<T> Failure(List<string> messages)
         {
             Throw.Exception.IfNull(messages, nameof(messages));
             return new Result<T>(false, default, messages);

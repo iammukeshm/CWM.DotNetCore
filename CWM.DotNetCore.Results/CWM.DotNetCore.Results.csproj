@@ -12,6 +12,9 @@
     <Description>Uniform Responses for your ASP.NET Core Applications.</Description>
     <PackageTags>Result, Response</PackageTags>
     <PackageTags></PackageTags>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

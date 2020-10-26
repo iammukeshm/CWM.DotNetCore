@@ -12,6 +12,9 @@
     <Description>Validates your C# Object and throws the required exception with just ONE Line of Code.</Description>
     <PackageTags>Validation, ValidatR</PackageTags>
     <PackageTags></PackageTags>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

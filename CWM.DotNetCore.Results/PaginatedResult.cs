@@ -13,14 +13,14 @@ namespace CWM.DotNetCore.Results
         }
         public List<T> Data { get; set; }
 
-        internal PaginatedResult(bool succeeded, List<T> data = default, IEnumerable<string> messages = null, long count = 0, int page = 1, int pageSize = 10) : base(succeeded, messages)
+        internal PaginatedResult(bool succeeded, List<T> data = default, List<string> messages = null, long count = 0, int page = 1, int pageSize = 10) : base(succeeded, messages)
         {
             Data = data;
             Page = page;
             TotalPages = (int)Math.Ceiling(count / (double)pageSize);
             TotalCount = count;
         }
-        public static new PaginatedResult<T> Failure(IEnumerable<string> messages)
+        public static new PaginatedResult<T> Failure(List<string> messages)
         {
             Throw.Exception.IfNull(messages, nameof(messages));
             return new PaginatedResult<T>(false, default, messages);
