@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWM.DotNetCore.Caching", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWM.DotNetCore.Domain", "CWM.DotNetCore.Domain\CWM.DotNetCore.Domain.csproj", "{C421E941-A77A-438C-84A8-24D607915AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.Tests", "CWM.Tests\CWM.Tests.csproj", "{06B33A9D-8387-4D41-8D2F-DA9052FFDEDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWM.Tests", "CWM.Tests\CWM.Tests.csproj", "{06B33A9D-8387-4D41-8D2F-DA9052FFDEDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWM.DotNetCore.Security", "CWM.DotNetCore.Security\CWM.DotNetCore.Security.csproj", "{1A9DAA37-C824-4526-9896-75C13DB3A713}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{06B33A9D-8387-4D41-8D2F-DA9052FFDEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06B33A9D-8387-4D41-8D2F-DA9052FFDEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06B33A9D-8387-4D41-8D2F-DA9052FFDEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9DAA37-C824-4526-9896-75C13DB3A713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9DAA37-C824-4526-9896-75C13DB3A713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9DAA37-C824-4526-9896-75C13DB3A713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9DAA37-C824-4526-9896-75C13DB3A713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

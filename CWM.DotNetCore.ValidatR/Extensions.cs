@@ -55,5 +55,12 @@ namespace CWM.DotNetCore.ValidatR
                 throw new ArgumentException(message);
             }
         }
+        public static void IfTrue(this IThrow validatR, bool value, string message)
+        {
+            if (value == true)
+            {
+                throw new ArgumentException(message);
+            }
+        }
     }
 }
